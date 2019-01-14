@@ -1,0 +1,222 @@
+
+<html>
+    <head>
+    
+    <SCRIPT LANGUAGE="JavaScript" SRC="/login.js"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript">
+    <!--
+    if (window.location.protocol == "http:") {
+    rExp = /http:\/\//;
+    window.location = window.location.href.replace(rExp, "https://");
+    }
+    //-->
+    </SCRIPT>
+    <!--
+    <title>Webmail - Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!-- Inserted by control panel -->
+    <SCRIPT LANGUAGE="JavaScript" SRC="/mail/js/login.js"></SCRIPT>
+    
+    <STYLE>
+    <!--
+    /* Page Body properites */
+    .loginBodyBGCOLOR {
+    background-color: #FFFFFF;
+    margin: 0px;
+    }
+    /* 1-pixel line color for above and below content */
+    .login1pxBGCOLOR {
+    background-color: #999999;
+    }
+    /* 1-pixel line color for around the login form */
+    .loginFormBorderBGCOLOR {
+    background-color: #ADADAD;
+    }
+    /* Background color for the left side of the page */
+    .loginLeftBGCOLOR {
+    background-color: #D9E8F0;
+    }
+    /* Background color/gradient for the right side of the page */
+    .loginRightBGCOLOR {
+    background-color: #4475A5;
+    background-image: url("/mail/images/login/login-bg.gif");
+    background-repeat: repeat-y;
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#D9E8F0', endColorStr='#4475A5', gradientType='1');
+    }
+    /* Font used in login form */
+    font.loginFormFont {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 8.5pt;
+    color:#FFFFFF;
+    }
+    /* Font used for title text on right side of page */
+    font.loginTitleFont {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 9.5pt;
+    font-weight: bold;
+    color:#333333;
+    }
+    /* Font used for title text on right side of page - when its a link */
+    font.loginTitleFont a {
+    color:#333333;
+    }
+    /* Font used for normal text on right side of page */
+    font.loginTextFont {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 8.5pt;
+    color:#333333;
+    }
+    /* Font used for normal text on right side of page - when its a link */
+    font.loginTextFont a {
+    color:#333333;
+    }
+    /* Font used for displaying login errors */
+    font.loginAlertFont {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 8.5pt;
+    font-weight: bold;
+    color:#990000;
+    }
+    /* Form input field properties (text fields and buttons) */
+    input.small {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 8.0pt;
+    }
+    /* Form input field properties (drop-down fields) */
+    select.small {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 8.0pt;
+    }
+    //.style1 {color: #FFFFFF}
+    font.loginForm_xtremesfx {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 10pt;
+    color:#FFFFFF;
+    }
+    -->
+    </STYLE>
+    
+    </head>
+    <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <table width="978" height="738" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+        <tr>
+            <td rowspan="4">
+            <img src="https://cp.mycpsrvr.com/clients/webmail/webmail_thbs_com/images/spin.gif" width="413" height="453" alt=""></td>
+            <td colspan="5">
+                <img src="images/index_02.jpg" width="564" height="1" alt=""></td>
+            <td>
+                <img src="https://cp.mycpsrvr.com/clients/webmail/webmail_thbs_com/images/spacer.gif" width="1" height="1" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td>
+                <img src="images/spacer.gif" width="1" height="31" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td>
+                <img src="https://cp.mycpsrvr.com/clients/webmail/webmail_thbs_com/images/torry_logo.jpg" width="267" height="46" alt=""></td>
+            <td>
+                <img src="images/spacer.gif" width="1" height="46" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="https://cp.mycpsrvr.com/clients/webmail/webmail_thbs_com/images/tail.gif" width="183" height="375" alt=""></td>
+            <td colspan="3"></td>
+            <td>
+                <img src="images/spacer.gif" width="1" height="375" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">
+                <img src="https://cp.mycpsrvr.com/clients/webmail/webmail_thbs_com/images/main_left.gif" width="453" height="266" alt=""></td>
+            <td colspan="2" align="center" valign="middle" background="https://cp.mycpsrvr.com/clients/webmail/webmail_thbs_com/images/menu_bg.gif"><TABLE width="182" height="154">
+        <FORM NAME="loginForm" ACTION="/mail/src/redirect.php" METHOD="POST" ONSUBMIT="submitForm()">
+        <INPUT TYPE="HIDDEN" NAME="js_autodetect_results" VALUE="SMPREF_JS_OFF" />
+        <INPUT TYPE="HIDDEN" NAME="just_logged_in" VALUE="1" />
+        <INPUT TYPE="HIDDEN" NAME="type" VALUE="v3">
+        
+        <TR>
+          <TD colspan="2"><script language="JavaScript">
+          <!--
+          //Find out if previous login failed
+          var loginFailed = getQueryVariable('fail');
+          if (loginFailed == '1') {
+            document.write('<FONT CLASS="loginAlertFont">Login failed.<BR><BR></FONT>');
+          }
+          //-->
+          </script></TD>
+        </TR>
+        
+        <TR>
+          <TD height="10" colspan="2"><font class="loginForm_xtremesfx">Email Address:</font></TD>
+        </TR>
+        <TR>
+          <TD height="10" colspan="2"><font class="loginFormFont">
+            <input type="TEXT" name="user_name" class="small" style="width:147px;">
+          </font></TD>
+        </TR>
+        <TR>
+          <TD height="10" colspan="2"></TD>
+        </TR>
+        <TR>
+          <TD colspan="2"><font class="loginForm_xtremesfx">Password:</font></TD>
+        </TR>
+        <TR>
+          <TD width="88"><font class="loginFormFont">
+            <input type=PASSWORD name="password" class="small" style="width:87px;">
+          </font></TD>
+          <TD WIDTH="82"><font class="loginFormFont">
+            <input name="SUBMIT" type="SUBMIT" class="small" style="width:50px;" value="Log-In">
+          </font></TD>
+        </TR>
+        <TR>
+          <TD colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="bottom"><input type="CHECKBOX" name="remember" id="remember" style="width:12px;"></td>
+                <td width="89%" valign="bottom"><font class="loginForm_xtremesfx">Remember my info</font></td>
+              </tr>
+            </table></TD>
+          </TR>
+        </FORM>
+       </TABLE></td>
+            <td colspan="2">
+                <img src="https://cp.mycpsrvr.com/clients/webmail/webmail_thbs_com/images/main_right.gif" width="291" height="185" alt=""></td>
+            <td>
+                <img src="images/spacer.gif" width="1" height="185" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="4" rowspan="2"></td>
+            <td>
+                <img src="images/spacer.gif" width="1" height="81" alt=""></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td>
+                <img src="images/spacer.gif" width="1" height="18" alt=""></td>
+        </tr>
+        <tr>
+            <td>
+                <img src="images/spacer.gif" width="413" height="1" alt=""></td>
+    
+            <td>
+                <img src="images/spacer.gif" width="40" height="1" alt=""></td>
+            <td>
+                <img src="images/spacer.gif" width="143" height="1" alt=""></td>
+            <td>
+                <img src="images/spacer.gif" width="90" height="1" alt=""></td>
+                                             
+            <td>
+                <img src="images/spacer.gif" width="24" height="1" alt=""></td>
+            <td>
+                <img src="images/spacer.gif" width="267" height="1" alt=""></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <SCRIPT LANGUAGE="JavaScript">
+    <!--
+    preloadForm();
+    //-->
+    </SCRIPT>
+    </body> 
+    </html>
